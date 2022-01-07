@@ -1,33 +1,44 @@
 
 body {
+    background-color: rgb(54, 54, 54);
     min-width: 300px;
     text-align: center;
+    color: rgb(223, 221, 221);
+    font-family: 'Comfortaa', cursive;
 }
 
+h1 {
+    font-size: 30px;
+}
 
+p {
+    text-align: center;
+    padding: 0px 20px;
+}
 
-
-
-
-
-
+span {
+    color: rgb(108, 212, 108);
+}
 
 .button {
+    margin-left: 110px;
     cursor: pointer;
-    background: rgb(105, 175, 202);
+    background: rgb(151, 180, 151);
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 2rem;
-    width: 4.5em;
+    width: 5.5em;
     border-radius: 1rem;
     /* animation: backgroundYellow 1s infinite */
 
 }
 
 .row {
+    color: black;
+    font-weight: 800;
     padding: 6px;
     pointer-events: none;
 }
@@ -39,19 +50,19 @@ body {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: #95e077;
     /* animation: moveCircleRight 1s infinite; */
 }
 
 @keyframes moveCircleRight {
     from {
         left: 0;
-        background-color: aquamarine;
+        background-color: rgb(69, 117, 69);
 
     }
     to {
         left: 100%;
-        background-color: burlywood;
+        background-color: rgb(108, 212, 108);
         transform: translateX(-100%);
     }
 }
@@ -64,28 +75,28 @@ body {
     }
     to {
         left: 0;
-        background-color: aquamarine;
-        transform: translateX(-100%);
+        background-color: #95e077;
+        transform: translateX(-10%);
     }
 }
 
 @keyframes backgroundYellow {
     0% {
-        background-color: #8ABFF0;
+        background-color: #95e077;
     }
 
     100% {
-        background-color: #FDFCA3;
+        background-color: #41a159;
     }
 }
 
 @keyframes backgroundBlue {
     0% {
-        background-color: #FBE36D;
+        background-color: #3d3d3b;
     }
 
     100% {
-        background-color: #8ABFF0;
+        background-color: #4d5e4a;
     }
 }
 
