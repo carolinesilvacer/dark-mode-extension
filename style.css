@@ -1,0 +1,93 @@
+
+body {
+    min-width: 300px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.button {
+    cursor: pointer;
+    background: rgb(105, 175, 202);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 4.5em;
+    border-radius: 1rem;
+    /* animation: backgroundYellow 1s infinite */
+
+}
+
+.row {
+    padding: 6px;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: aquamarine;
+    /* animation: moveCircleRight 1s infinite; */
+}
+
+@keyframes moveCircleRight {
+    from {
+        left: 0;
+        background-color: aquamarine;
+
+    }
+    to {
+        left: 100%;
+        background-color: burlywood;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveCircleLeft {
+    from {
+        left: 100%;
+        background-color: burlywood;
+
+    }
+    to {
+        left: 0;
+        background-color: aquamarine;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes backgroundYellow {
+    0% {
+        background-color: #8ABFF0;
+    }
+
+    100% {
+        background-color: #FDFCA3;
+    }
+}
+
+@keyframes backgroundBlue {
+    0% {
+        background-color: #FBE36D;
+    }
+
+    100% {
+        background-color: #8ABFF0;
+    }
+}
+
+
+
